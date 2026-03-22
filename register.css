@@ -1,0 +1,157 @@
+
+body{
+  margin:0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg,#0f172a,#020617);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  color:white;
+}
+
+.container{
+  width:100%;
+  max-width:400px;
+  padding:20px;
+  position:relative;
+}
+
+.back{
+  position:absolute;
+  top:-12px;
+  left:-8px;
+  color:#cbd5f5;
+  text-decoration:none;
+  font-size:14px;
+  transition:0.3s;
+}
+
+.back:hover{
+  color:#8b5cf6;
+}
+
+.card{
+  background:#111827;
+  padding:30px;
+  border-radius:15px;
+  text-align:center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.icon{
+  font-size:30px;
+  background:#8b5cf6;
+  width:60px;
+  height:60px;
+  margin:auto;
+  border-radius:50%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-bottom:15px;
+}
+
+input,
+select{
+  width:100%;
+  padding:12px 15px;
+  border-radius:10px;
+  border:1px solid #1e293b;
+  outline:none;
+
+  background:#020617 !important;
+  color:#ffffff !important;
+
+  font-size:14px;
+  margin-bottom:15px;
+  transition:0.3s;
+  appearance:none;
+}
+
+input::placeholder{
+  color:#9ca3af;
+}
+
+select{
+  color:#e5e7eb;
+  cursor:pointer;
+}
+
+input:focus,
+select:focus{
+  border-color:#8b5cf6;
+  box-shadow:0 0 8px rgba(139,92,246,0.5);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus{
+  -webkit-box-shadow: 0 0 0 1000px #020617 inset !important;
+  -webkit-text-fill-color: #ffffff !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.password-box{
+  position:relative;
+}
+
+
+.password-box i{
+  position:absolute;
+  right:15px;
+  top:50%;
+  transform:translateY(-50%);
+  color:#9ca3af;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.password-box i:hover{
+  color:#8b5cf6;
+}
+
+button{
+  width:100%;
+  padding:12px;
+  background: linear-gradient(90deg,#7c3aed,#8b5cf6);
+  border:none;
+  border-radius:10px;
+  color:white;
+  font-weight:bold;
+  margin-top:10px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+button:hover{
+  opacity:0.9;
+  transform:translateY(-2px);
+  box-shadow:0 5px 15px rgba(139,92,246,0.4);
+}
+
+.login-link{
+  margin-top:15px;
+  font-size:14px;
+}
+
+.login-link a{
+  color:#8b5cf6;
+  text-decoration:none;
+}
+
+@media(max-width:480px){
+
+  .card{
+    padding:20px;
+  }
+
+  h2{
+    font-size:20px;
+  }
+
+  .back{
+    top:-6px;
+    left:0;
+  }
+}

@@ -1,0 +1,290 @@
+body {
+  padding-top: 70px;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f172a;
+
+}
+body,html{
+    overflow-x: hidden;
+}
+
+.custom-navbar {
+  background: linear-gradient(45deg, #0f172a, #1e293b);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+  transition: 0.3s;
+}
+.logo-img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+.nav-link {
+  color: #e2e8f0;
+  margin: 0 10px;
+  position: relative;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #38bdf8 ;
+}
+
+.nav-link::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #38bdf8;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+.nav-link.dropdown-toggle.profile-icon::after {
+ display: none;
+}
+
+.profile-icon i {
+  color: #38bdf8;
+  transition: 0.3s;
+}
+
+.profile-icon i:hover {
+  transform: scale(1.2);
+}
+
+.custom-dropdown {
+  background: #1e293b;
+  border: none;
+}
+
+.custom-dropdown .dropdown-item {
+  color: white;
+  transition: 0.3s;
+}
+
+.custom-dropdown .dropdown-item:hover {
+  background: #38bdf8;
+  color: black;
+}
+
+@media (max-width: 991px) {
+
+  .navbar-collapse {
+    background: #1e293b;
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .nav-link {
+    padding: 10px;
+    margin: 5px 0;
+  }
+
+  .dropdown-menu {
+    background: #0f172a;
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+   .logo-img {
+    height: 30px;
+  }
+
+  .nav-link {
+    font-size: 14px;
+  }
+
+}
+.contact-section {
+  background: #0b0f19;
+  color: white;
+  padding: 100px 0;
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.contact-info .info-box {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+  align-items: flex-start;
+}
+
+.info-box i {
+  font-size: 20px;
+  color: #22d3ee;
+  background: #111827;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.info-box h5 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.info-box p {
+  margin: 0;
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+.contact-form {
+  background: #111827;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  background: #0b0f19;
+  border: 1px solid #1f2937;
+  color: white;
+  border-radius: 8px;
+  outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #22d3ee;
+}
+
+.contact-form button {
+  background: linear-gradient(90deg, #22d3ee, #6366f1);
+  border: none;
+  padding: 12px;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  opacity: 0.8;
+}
+
+.map-section iframe {
+  width: 100%;
+  height: 350px;
+  border: 0;
+  border-radius: 15px;
+}
+
+@media (max-width: 991px) {
+  .contact-section h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-section {
+    padding: 60px 0;
+  }
+
+  .contact-form {
+    padding: 20px;
+  }
+}
+.footer-section {
+  background: #000;
+  color: white;
+  padding: 80px 0 30px;
+}
+
+.footer-logo {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.footer-text {
+  color: #94a3b8;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 10px 0;
+}
+.footer-logo-img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+.footer-section ul li a {
+  text-decoration: none;
+  color: #cbd5f5;
+  transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #22d3ee;
+}
+
+.social-icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background: #0f172a;
+  color: #22d3ee;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  background: #22d3ee;
+  color: black;
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  border-top: 1px solid #1e293b;
+  margin-top: 30px;
+  padding-top: 20px;
+  color: #94a3b8;
+}
+
+@media (max-width: 991px) {
+  .footer-section {
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-logo {
+    font-size: 1.5rem;
+  }
+
+  .footer-section h5 {
+    margin-top: 20px;
+  }
+    .footer-logo-img {
+    height: 30px;
+  }
+}

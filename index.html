@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title> Stackly || Cyber Security</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top">
+  <div class="container">
+
+  <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+  <img src="Adobe Express - file.png" alt="Logo" class="logo-img">
+  
+</a>
+
+   
+    <button class="navbar-toggler" type="button" onclick="toggleMenu()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html"><i class="bi bi-house-door"></i> Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="service.html"><i class="bi bi-gear"></i> Services</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="blog.html"><i class="bi bi-journal-text"></i> Blog</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html"><i class="bi bi-envelope"></i> Contact</a>
+        </li>
+
+        <li class="nav-item dropdown ms-lg-3">
+          <a class="nav-link dropdown-toggle profile-icon" href="#" role="button" data-bs-toggle="dropdown">
+            <i class="bi bi-person-circle fs-4"></i>
+          </a>
+
+          <ul class="dropdown-menu dropdown-menu-end custom-dropdown">
+
+            <li>
+              <a class="dropdown-item" href="login.html">
+                <i class="bi bi-box-arrow-in-right"></i> Login
+              </a>
+            </li>
+
+            <li>
+              <a class="dropdown-item" href="register.html">
+                <i class="bi bi-person-plus"></i> Register
+              </a>
+            </li>
+
+          </ul>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<section class="hero-section d-flex align-items-center">
+  <div class="container">
+    <div class="row align-items-center">
+
+     
+      <div class="col-lg-6 text-content">
+        <h1 class="hero-title">
+          Cybersecurity <br> made easier
+        </h1>
+
+        <p class="hero-text">
+          Designed to meet your growing security needs, we provide multiple layers of protection in one platform with expert guidance.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="error.html" class="btn btn-cyber">Learn More</a>
+          <a href="error.html" class="btn btn-link-custom">How does it work?</a>
+        </div>
+      </div>
+
+
+      <div class="col-lg-6 text-center">
+        <img src="hero1.webp" class="img-fluid hero-img" alt="Cyber Image">
+      </div>
+
+    </div>
+  </div>
+</section>
+<section class="stats-section">
+  <div class="container">
+
+    <h2 class="text-center stats-title">Award-Winning Cybersecurity</h2>
+
+    <div class="row mt-5">
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="stat-card text-center">
+          <i class="bi bi-shield-lock stat-icon"></i>
+          <h3 class="counter" data-target="4000">0</h3>
+          <p>Organizations protected</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="stat-card text-center">
+          <i class="bi bi-globe stat-icon"></i>
+          <h3 class="counter" data-target="60">0</h3>
+          <p>Countries worldwide</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="stat-card text-center">
+          <i class="bi bi-award stat-icon"></i>
+          <h3 class="counter" data-target="65">0</h3>
+          <p>Industry awards</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="choose-section">
+  <div class="container">
+
+    <h2 class="text-center section-title">Why choose Stackly?</h2>
+
+   
+    <div class="tabs text-center mt-4">
+      <button class="tab-btn active" onclick="showTab('protection')">Protection</button>
+      <button class="tab-btn" onclick="showTab('performance')">Performance</button>
+      <button class="tab-btn" onclick="showTab('easy')">Easy to use</button>
+    </div>
+
+
+    <div class="tab-content mt-5">
+
+    
+      <div class="tab-pane active" id="protection">
+        <div class="row align-items-center">
+
+          <div class="col-lg-6">
+            <h3>Complete protection</h3>
+            <p>
+              Stackly uses advanced AI technology to detect and stop threats before they impact your system.
+            </p>
+
+            <ul>
+              <li><i class="bi bi-check-circle-fill"></i> Protect your privacy</li>
+              <li><i class="bi bi-check-circle-fill"></i> Secure your payments</li>
+              <li><i class="bi bi-check-circle-fill"></i> Block intruders</li>
+            </ul>
+          </div>
+
+          <div class="col-lg-6 text-center">
+            <img src="choose1.webp" class="img-fluid tab-img">
+          </div>
+
+        </div>
+      </div>
+
+      <div class="tab-pane" id="performance">
+        <div class="row align-items-center">
+
+          <div class="col-lg-6">
+            <h3>Keeps devices running smoothly</h3>
+            <p>
+              Lightweight protection that runs in the background without slowing your system.
+            </p>
+
+            <ul>
+              <li><i class="bi bi-check-circle-fill"></i> Optimized performance</li>
+              <li><i class="bi bi-check-circle-fill"></i> Scheduled scans</li>
+            </ul>
+          </div>
+
+          <div class="col-lg-6 text-center">
+            <img src="choose2.webp" class="img-fluid tab-img">
+          </div>
+
+        </div>
+      </div>
+
+    
+      <div class="tab-pane" id="easy">
+        <div class="row align-items-center">
+
+          <div class="col-lg-6">
+            <h3>Simple & easy to use</h3>
+            <p>
+              Full control with an intuitive interface designed for everyone.
+            </p>
+
+            <ul>
+              <li><i class="bi bi-check-circle-fill"></i> Control notifications</li>
+              <li><i class="bi bi-check-circle-fill"></i> Pause alerts anytime</li>
+            </ul>
+          </div>
+
+          <div class="col-lg-6 text-center">
+            <img src="choose3.webp" class="img-fluid tab-img">
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <section class="platform-section">
+  <div class="container text-center">
+
+    <h2 class="platform-title">
+      If you use Mac or Android, then we’ve got great news.
+    </h2>
+
+    <p class="platform-subtitle">
+      Stackly security plans offer specialized protection where you need it most
+    </p>
+
+    <div class="row mt-5">
+
+   
+      <div class="col-lg-6 mb-4">
+        <div class="platform-card">
+
+          <div class="row align-items-center">
+
+            <div class="col-md-6 text-start">
+              <p class="small-text">MacOS Protection</p>
+              <h4>Antivirus for Mac</h4>
+              <p>Essential tools to protect your digital life.</p>
+
+              <a href="error.html" class="know-btn">
+                Know More <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+
+            <div class="col-md-6 text-center">
+              <img src="mac.webp" class="img-fluid card-img">
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    
+      <div class="col-lg-6 mb-4">
+        <div class="platform-card">
+
+          <div class="row align-items-center">
+
+            <div class="col-md-6 text-start">
+              <p class="small-text">Android Protection</p>
+              <h4>Antivirus for Android</h4>
+              <p>Keep your phone & tablet protected.</p>
+
+              <a href="error.html" class="know-btn">
+                Know More <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+
+            <div class="col-md-6 text-center">
+              <img src="android.webp" class="img-fluid card-img">
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section class="services-section">
+  <div class="container">
+
+ 
+    <div class="row align-items-center mb-5">
+
+      <div class="col-lg-6">
+        <h1 class="service-title">Cybersecurity Services</h1>
+        <p class="service-text">
+          Carry out business as usual with confidence while Stackly detects, protects, and eliminates any digital threats.
+        </p>
+
+        <a href="error.html" class="chat-btn">Let's Chat</a>
+      </div>
+
+      <div class="col-lg-6 text-center">
+        <div class="circle-design"></div>
+      </div>
+
+    </div>
+
+    
+    <div class="row g-4">
+
+
+      <div class="col-lg-6">
+        <div class="service-card ">
+          <h3>Digital Forensics</h3>
+          <a href="error.html" class="arrow-btn"><i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="service-card">
+          <h3>Threat Intelligence</h3>
+          <a href="error.html" class="arrow-btn"><i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="service-card">
+          <h3>Identity Protection</h3>
+          <a href="error.html" class="arrow-btn"><i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="service-card">
+          <h3>Red Teaming</h3>
+          <a href="error.html" class="arrow-btn"><i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="service-card">
+          <h3>Fraud Detection</h3>
+          <a href="error.html" class="arrow-btn"><i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="service-card">
+          <h3>Endpoint Protection</h3>
+          <a href="error.html" class="arrow-btn"><i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="business-section">
+  <div class="container">
+
+    <h2 class="business-title text-center">
+      Tools built to meet the needs of small business
+    </h2>
+
+    <div class="row align-items-center mt-5">
+
+      <div class="col-lg-6 text-center">
+        <div class="image-box">
+          <img src="people1.webp" class="img-fluid">
+          <!-- <span class="image-badge">All-in-one interface</span> -->
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <h3>Robust protection for budget-minded businesses</h3>
+
+        <p>
+          Stackly Small Business Security helps you manage cybersecurity easily while focusing on your business.
+        </p>
+
+        <ul class="business-list">
+          <li><i class="bi bi-check-circle-fill"></i> Install and forget</li>
+          <li><i class="bi bi-check-circle-fill"></i> Easy management</li>
+          <li><i class="bi bi-check-circle-fill"></i> Affordable solution</li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="row align-items-center mt-5 flex-lg-row-reverse">
+      <div class="col-lg-6 text-center">
+        <div class="image-box">
+          <img src="people2.webp" class="img-fluid">
+          <!-- <span class="image-badge">Complete cybersecurity control</span> -->
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <h3>Maximize your business security with Endpoint Protection</h3>
+
+        <p>
+          Stackly Endpoint Security keeps your data safe and protects devices from modern cyber threats.
+        </p>
+
+        <ul class="business-list">
+          <li><i class="bi bi-check-circle-fill"></i> Endpoint protection</li>
+          <li><i class="bi bi-check-circle-fill"></i> Advanced features</li>
+          <li><i class="bi bi-check-circle-fill"></i> Efficiency focused</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<section class="solutions-section">
+  <div class="container text-center">
+
+    
+    <h2 class="solutions-title">
+      More business cybersecurity solutions for your needs
+    </h2>
+
+    <p class="solutions-subtitle">
+      No matter which services you use, Stackly has a solution for you
+    </p>
+
+    <div class="row mt-5 g-4">
+
+     
+      <div class="col-lg-3 col-md-6">
+        <div class="solution-card">
+          <i class="bi bi-shield-check icon"></i>
+          <h5>EDR Optimum</h5>
+          <p>Adaptive security platform for modern teams.</p>
+          <a href="error.html" class="solution-btn">Learn More</a>
+        </div>
+      </div>
+
+  
+      <div class="col-lg-3 col-md-6">
+        <div class="solution-card">
+          <i class="bi bi-globe icon"></i>
+          <h5>Internet Gateway</h5>
+          <p>Secure internet access for employees.</p>
+          <a href="error.html" class="solution-btn">Learn More</a>
+        </div>
+      </div>
+
+
+      <div class="col-lg-3 col-md-6">
+        <div class="solution-card">
+          <i class="bi bi-envelope icon"></i>
+          <h5>Mail Security</h5>
+          <p>Protect business email from threats.</p>
+          <a href="error.html" class="solution-btn">Learn More</a>
+        </div>
+      </div>
+
+
+      <div class="col-lg-3 col-md-6">
+        <div class="solution-card">
+          <i class="bi bi-microsoft icon"></i>
+          <h5>Office 365 Security</h5>
+          <p>All-in-one protection for collaboration tools.</p>
+          <a href="error.html" class="solution-btn">Learn More</a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<footer class="footer-section">
+  <div class="container">
+
+    <div class="row">
+
+      
+      <div class="col-lg-4 col-md-6 mb-4">
+       <h3 class="footer-logo d-flex align-items-center">
+            <img src="Adobe Express - file.png" class="footer-logo-img" alt="Logo">
+            
+        </h3>
+
+        <p class="footer-text">
+          Advanced cybersecurity solutions to protect your business, data, and digital infrastructure.
+        </p>
+
+      
+        <div class="social-icons">
+          <a href="error.html"><i class="bi bi-facebook"></i></a>
+          <a href="error.html"><i class="bi bi-twitter"></i></a>
+          <a href="error.html"><i class="bi bi-linkedin"></i></a>
+          <a href="error.html"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-6 mb-4">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="error.html">About Us</a></li>
+          <li><a href="error.html">Careers</a></li>
+          <li><a href="error.html">Blog</a></li>
+          <li><a href="error.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="error.html">Threat Intelligence</a></li>
+          <li><a href="error.html">Cloud Security</a></li>
+          <li><a href="error.html">Endpoint Protection</a></li>
+          <li><a href="error.html">Identity Protection</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5>Support</h5>
+        <ul>
+          <li><a href="error.html">Help Center</a></li>
+          <li><a href="error.html">Privacy Policy</a></li>
+          <li><a href="error.html">Terms</a></li>
+          <li><a href="error.html">Security</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom text-center">
+      <p>&copy; 2026 Stackly. All rights reserved.</p>
+    </div>
+
+  </div>
+</footer>
+<script src="script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    function toggleMenu() {
+  let menu = document.getElementById("navbarMenu");
+
+  if (menu.classList.contains("show")) {
+    menu.classList.remove("show");
+  } else {
+    menu.classList.add("show");
+  }
+}
+</script>
+
+</body>
+</html>

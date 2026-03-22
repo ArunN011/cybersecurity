@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Dashboard</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<link rel="stylesheet" href="user.css">
+</head>
+<body>
+
+<div class="overlay" id="overlay" onclick="toggleSidebar()"></div>
+
+<div class="sidebar" id="sidebar">
+  <h2 class="logo">CyberSecure</h2>
+
+  <ul>
+   <li class="active">
+    <a href="user.html">
+      <i class="bi bi-grid"></i> Dashboard
+    </a>
+  </li>
+
+  <li>
+    <a href="threat.html">
+      <i class="bi bi-shield-lock"></i> Threat Monitor
+    </a>
+  </li>
+
+  <li>
+    <a href="index.html">
+      <i class="bi bi-house"></i> Back To Home
+    </a>
+  </li>
+    <li onclick="logout()"><i class="bi bi-box-arrow-right"></i> Logout</li>
+  </ul>
+</div>
+
+<div class="main">
+
+  <div class="topbar">
+    <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+
+    <div class="top-right">
+      <i class="bi bi-bell notification"></i>
+
+      <div class="profile">
+        <img src="https://i.pravatar.cc/40">
+        <span id="userEmail"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="alert-box">
+    ⚠️ High Risk: Suspicious login attempt detected
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <h4>Threats Today</h4>
+      <h2 id="count1">0</h2>
+    </div>
+    <div class="card">
+      <h4>Blocked Attacks</h4>
+      <h2 id="count2">0</h2>
+    </div>
+    <div class="card">
+      <h4>Safe Sessions</h4>
+      <h2 id="count3">0</h2>
+    </div>
+    <div class="card glow">
+      <h4>Security Score</h4>
+      <h2>92%</h2>
+    </div>
+  </div>
+
+
+  <div class="charts">
+
+    <div class="chart-box">
+      <h3>Live Threat Trends</h3>
+       <div class="chart-inner">
+      <canvas id="barChart"></canvas>
+    </div>
+    </div>
+
+    <div class="chart-box">
+      <h3>Threat Distribution</h3>
+       <div class="chart-inner">
+      <canvas id="pieChart"></canvas>
+    </div>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="user.js"></script>
+</body>
+</html>
