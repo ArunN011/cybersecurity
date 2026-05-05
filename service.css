@@ -211,7 +211,7 @@ body,html{
 
 .cta-btn {
   display: inline-block;
-  background: #22c55e;
+  background: #22d3ee;
   color: black;
   padding: 12px 25px;
   border-radius: 8px;
@@ -221,7 +221,8 @@ body,html{
 }
 
 .cta-btn:hover {
-  background: #16a34a;
+    background: #06b6d4;
+    color: white;
   transform: scale(1.05);
 }
 
