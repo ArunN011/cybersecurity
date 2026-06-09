@@ -149,13 +149,18 @@ body,html{
 }
 
 .btn-link-custom {
-  color: #cbd5f5;
+  color: black;
   text-decoration: none;
+   background: #22d3ee;
   margin-left: 10px;
+  padding: 12px 25px;
+  border-radius: 8px;
+  transition: 0.3s;
 }
 
 .btn-link-custom:hover {
-  color: #22d3ee;
+  background: #0ea5e9;
+  transform: scale(1.05);
 }
 
 .hero-img {
